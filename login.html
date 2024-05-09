@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="C:\Users\Soham\OneDrive\Desktop\devlopment  project\xy\css\login.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <title>vit hospital</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Sign Up</h1>
+
+          <input type="text" placeholder="Name" id="name" />
+          <input type="email" placeholder="Email" id="mail" />
+          <input type="password" placeholder="Password" id="pass" />
+          <button>Sign Up</button>
+          <br /><br /><br /><br />
+
+          <div class="logup">
+            <p style="color: red;">*Enter correct username or password*</p>
+          </div>
+
+          <div class="social-container">
+           <a class="social" id="goo"><img src="C:\Users\Soham\OneDrive\Desktop\devlopment  project\xy\img\google.png" alt="google"></a>
+           <a class="social" id="fac"><img src="C:\Users\Soham\OneDrive\Desktop\devlopment  project\xy\img\facebook.png" alt="facebook"></a>
+           
+         
+          </div>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign In</h1>
+
+          <input type="email" placeholder="Email" id="mail" />
+          <input type="password" placeholder="Password" id="pass" />
+          <button>Log In</button>
+          <br /><br /><br /><br /><br /><br />
+
+          <div class="login">
+           <p style="color: red;">*Enter correct username or password*</p>
+          </div>
+
+          <div class="social-container">
+           
+            <a class="social" id="goo"><img src="C:\Users\Soham\OneDrive\Desktop\devlopment  project\xy\img\google.png" alt="google"></a>
+            <a class="social" id="fac"><img src="C:\Users\Soham\OneDrive\Desktop\devlopment  project\xy\img\facebook.png" alt="facebook"></a>
+            
+          </div>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>welcome</h1>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              Empowering Health Through Technology: Join Us in the Fight Against Skin Cancer
+            </p>
+            <br />
+            <p style="color: rgb(0, 68, 255)">Already have an account?</p>
+            <button class="press" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+           <h1>Skin Vision</h1>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Empowering Health Through Technology: Join Us in the Fight Against Skin Cancer</p>
+            <br />
+            <p style="color: rgb(0, 68, 255)">Don't have an account?</p>
+            <button class="press" id="signUp" style="color: rgb(57, 49, 5)">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+      });
+
+    
+    
+    
+  
+    </script>
+  </body>
+</html>
